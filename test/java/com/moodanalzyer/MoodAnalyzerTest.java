@@ -8,13 +8,13 @@ public class MoodAnalyzerTest {
 
     @Test
     void testMoodAnalysis1() throws Exception{
-        MoodAnalyzer mood = new MoodAnalyzer("I am in Sad mood");
+        MoodAnalyzer mood = new MoodAnalyzer("I am in mood");
         String s =  mood.analyzeMood();
         Assertions.assertEquals(s, "SAD");
     }
     @Test
     void testMoodAnalysis2() throws Exception{
-        MoodAnalyzer mood = new MoodAnalyzer("I am in ANY mood");
+        MoodAnalyzer mood = new MoodAnalyzer("");
         String s =  mood.analyzeMood();
         Assertions.assertEquals(s, "HAPPY");
     }
